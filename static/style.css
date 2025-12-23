@@ -1,0 +1,102 @@
+/* General body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container for everything */
+.container {
+    background-color: #fff;
+    padding: 40px 50px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Title styling */
+h2 {
+    color: #4a00e0;
+    margin-bottom: 30px;
+    font-size: 26px;
+}
+
+/* Input box styling */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="text"] {
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #4a00e0;
+    box-shadow: 0 0 5px rgba(74,0,224,0.5);
+}
+
+/* Button styling */
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: #4a00e0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #8e2de2;
+}
+
+/* Result container styling */
+.result-container {
+    margin-top: 25px;
+    background-color: #f1f1f1;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#predictionResult {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4a00e0;
+    margin-bottom: 8px;
+}
+
+#precautionResult {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 500px) {
+    .container {
+        padding: 25px 20px;
+    }
+
+    input[type="text"], button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+}

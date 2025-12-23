@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Health Symptom Checker</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>🩺 AI Health Symptom Checker</h2>
+
+    <div class="input-container">
+      <input type="text" id="userSymptoms" placeholder="Enter symptoms separated by commas">
+      <button id="predictBtn">Check Condition</button>
+    </div>
+
+    <div class="result-container">
+      <h3 id="predictionResult"></h3>
+      <p id="precautionResult"></p>
+      <p style="color:red;">⚠️ This is not medical advice.</p>
+    </div>
+  </div>
+
+  <script src="/static/js/dashboard.js"></script>
+</body>
+</html>
